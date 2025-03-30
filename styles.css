@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: pink;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #d21ec9;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d21ec9;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #3c65eb;
+  color: white;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+section#about p {
+  background-color: rgba(237, 156, 233, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.project {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#about .container p,
+#projects .container p {
+  background-color: rgba(237, 156, 233, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #d21ec9;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+h1,
+h2 {
+  background: linear-gradient(
+    90deg,
+    #e6007e,
+    #ffeb3b,
+    #00c2cb,
+    #e6007e
+  ); /* Gradient background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: shine 10s linear infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
